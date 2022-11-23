@@ -1,21 +1,20 @@
-def soma_lista(lista):
-    """Minha implementação do "sum" do python"""
+def somalist(lista):
     soma = 0
     for i in lista:
         soma += i
     return soma
 
-def muito_esperto(quantidade_de_pecas, lista_incompleta):
+
+def metodo(quantidade_de_pecas, lista_incompleta):
     total_lista_completa = int((quantidade_de_pecas * (quantidade_de_pecas + 1)) / 2)
-    total_lista_incompleta = soma_lista(lista_incompleta)
+    total_lista_incompleta = somalist(lista_incompleta)
     print(total_lista_completa - total_lista_incompleta)
 
+
 def main():
-    """Programa principal"""
-    # lendo entrada
     quantidade_de_pecas = int(input())
     lista_incompleta = [int(i) for i in input().split()]
-    # método usado
-    muito_esperto(quantidade_de_pecas, lista_incompleta)
+    metodo(quantidade_de_pecas, lista_incompleta)
+
 
 main()
