@@ -6,7 +6,6 @@ def soma_lista(lista):
     return soma
 
 def muito_esperto(quantidade_de_pecas, lista_incompleta):
-    """Jeito profissional"""
     total_lista_completa = int((quantidade_de_pecas * (quantidade_de_pecas + 1)) / 2)
     total_lista_incompleta = soma_lista(lista_incompleta)
     print(total_lista_completa - total_lista_incompleta)
